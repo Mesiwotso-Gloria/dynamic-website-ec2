@@ -31,6 +31,7 @@ ssh -i "your-key.pem" ec2-user@your-public-ip
    ```
 ## Step 3: Install a Web Server
 1. Install Apache or Nginx
+
 For Apache:
 ```bash
    sudo apt install apache2 -y # For Ubuntu
