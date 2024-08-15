@@ -19,8 +19,8 @@ Launch the instance.
 1. Open a terminal (Linux/Mac) or PuTTY (Windows).
 2. Connect to your instance using the following command (replace `your-key.pem` or `your-key.ppk` with your key file and `ec2-user@your-public-ip` with your instance’s public IP):
 
-``bash
+```bash
 ssh -i "your-key.pem" ec2-user@your-public-ip
 
-``
+```
 
