@@ -96,3 +96,4 @@ Below is a sample of permissions:
 6. Consider using AWS WAF (Web Application Firewall) and other security services to protect your application.
 
 ## Conclusion
+Congratulations! You have sucessfully hosted a dynamic webiste on Amazon Ec2
