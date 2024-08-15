@@ -74,6 +74,7 @@ for Nginx:
 1. Upload Your Application Files. You can use `scp` (Linux/Mac) or an SFTP client (like FileZilla) to upload your application files to the EC2 instance
 2. Place your files in the web server’s root directory
 3. Ensure your files have the correct permissions
+
 Below is a sample of permissions:
 ```bash
    sudo chown -R ec2-user:ec2-user /var/www/html/  
