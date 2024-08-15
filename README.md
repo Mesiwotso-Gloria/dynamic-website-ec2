@@ -23,4 +23,21 @@ Launch the instance.
 ssh -i "your-key.pem" ec2-user@your-public-ip
 
 ```
+3. For Windows users, use PuTTY with the corresponding `.ppk` key file.
+4. Once connected, update your instance’s package lists:
+   ```bash
+     sudo apt update -y   # For Ubuntu
 
+   ```
+## Step 3: Install a Web Server
+1. Install Apache or Nginx
+For Apache:
+```bash
+   sudo apt install apache2 -y # For Ubuntu
+```
+
+For Nginx: 
+```bash
+   sudo apt install nginx -y
+```
+2. 
