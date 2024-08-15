@@ -1,4 +1,6 @@
-# Prerequisites:
+#Dynamic website in Amazon EC2
+
+## Prerequisites:
 1. An AWS account.
 2. Basic knowledge of the Linux command line (if using a Linux-based instance).
 3. A web application ready to be deployed.
