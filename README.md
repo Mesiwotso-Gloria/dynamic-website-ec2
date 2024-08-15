@@ -1,4 +1,4 @@
-#Dynamic website in Amazon EC2
+# Dynamic website in Amazon EC2
 
 ## Prerequisites:
 1. An AWS account.
