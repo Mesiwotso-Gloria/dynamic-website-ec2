@@ -70,3 +70,24 @@ for Nginx:
 ```bash
    sudo mysql_secure_installation
 ```
+## Step 5: Deploy Your Web Application
+1. Upload Your Application Files. You can use `scp` (Linux/Mac) or an SFTP client (like FileZilla) to upload your application files to the EC2 instance
+2. Place your files in the web server’s root directory
+3. Ensure your files have the correct permissions
+Below is a sample of permissions:
+```bash
+   sudo chown -R ec2-user:ec2-user /var/www/html/  
+   sudo chmod -R 755 /var/www/html/
+```
+4. Edit the web server configuration file if needed to set up your application, such as enabling virtual hosts or configuring server blocks.
+5. Restart the Web Server
+
+## Manage Your EC2 Instance
+1. Use AWS CloudWatch to monitor the performance of your EC2 instance.
+2. Consider setting up auto-scaling if your application demands fluctuate.
+3. Regularly create snapshots of your EC2 instance and EBS volumes to ensure data is backed up.
+4. Regularly update your instance and web server software.
+5. Use IAM roles and policies to manage access to your EC2 instance.
+6. Consider using AWS WAF (Web Application Firewall) and other security services to protect your application.
+
+## Conclusion
