@@ -1,5 +1,7 @@
 # Dynamic website in Amazon EC2
 
+Hosting a dynamic website on Amazon EC2 offers flexibility, scalability, and control, making it an excellent choice for developers and businesses looking to deploy web applications om AWS
+
 ## Prerequisites:
 1. An AWS account.
 2. Basic knowledge of the Linux command line (if using a Linux-based instance).
