@@ -3,7 +3,7 @@
 2. Basic knowledge of the Linux command line (if using a Linux-based instance).
 3. A web application ready to be deployed.
 
-## Step 1: Launch an EC2 Instance
+## Launch an EC2 Instance
 1. Go to the EC2 service from the console.
 2. Click on Launch Instance.
 3. Choose an Amazon Machine Image (AMI). For a dynamic website, you typically select a Linux distribution (e.g., Amazon Linux 2, Ubuntu) or a Windows Server if your application requires it.
@@ -14,7 +14,7 @@
 8. Choose or create a new key pair for SSH access, download the .pem file,or .ppk file and store it securely.
 Launch the instance.
 
-## Step 2: Connect to Your EC2 Instance
+## Connect to Your EC2 Instance
 ### Using SSH (Linux/Mac) or PuTTY (Windows):
 1. Open a terminal (Linux/Mac) or PuTTY (Windows).
 2. Connect to your instance using the following command (replace `your-key.pem` or `your-key.ppk` with your key file and `ec2-user@your-public-ip` with your instance’s public IP):
@@ -29,7 +29,7 @@ ssh -i "your-key.pem" ec2-user@your-public-ip
      sudo apt update -y   # For Ubuntu
 
    ```
-## Step 3: Install a Web Server
+## Install a Web Server
 1. Install Apache or Nginx
 
 For Apache:
@@ -41,4 +41,32 @@ For Nginx:
 ```bash
    sudo apt install nginx -y
 ```
-2. 
+2. Start and Enable the Web Server:
+
+For Apache:
+```bash
+   sudo systemctl start httpd
+   sudo systemctl enable httpd
+```
+
+for Nginx:
+```bash
+   sudo systemctl start nginx
+   sudo systemctl enable nginx
+```
+3. Access your instance’s public IP address in a browser. You should see the default Apache or Nginx welcome page.
+   
+## Install and Configure a Database (Optional)
+1. Install MySQL:
+   ```bash
+      sudo apt install mysql-server -y
+   ```
+2.  Start and Enable the Database Service
+```bash
+   sudo systemctl start mysqld
+   sudo systemctl enable mysqld
+```
+3. Secure the Database Installation
+```bash
+   sudo mysql_secure_installation
+```
